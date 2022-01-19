@@ -1,14 +1,17 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 <!-- changelog -->
 
+## [v1.0.6](https://github.com/spandex-project/spandex_phoenix/compare/1.0.5...v1.0.6) (2021-10-23)
+
+* fix: function :function_clause.__struct__/0 is undefined by @fuelen in https://github.com/spandex-project/spandex_phoenix/pull/43
+* Tweak router exception handling and CI clean-up by @GregMefford in https://github.com/spandex-project/spandex_phoenix/pull/45
+* Update maintainers and sponsor link by @GregMefford in https://github.com/spandex-project/spandex_phoenix/pull/50
+
 ## [v1.0.5](https://github.com/spandex-project/spandex_phoenix/compare/1.0.4...v1.0.5) (2020-11-25)
-
-
-
 
 ### Bug Fixes:
 
@@ -72,13 +75,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [v0.3.1](https://github.com/spandex-project/spandex_phoenix/compare/0.3.0...v0.3.1) (2018-12-20)
 
-## Bug Fixes:
+### Bug Fixes:
 
 - Configure tracer runtime instead of compile time
 
 ## [v0.3.0](https://github.com/spandex-project/spandex_phoenix/compare/0.2.1...v0.2.1) (2018-11-19)
 
-## Bug Fixes:
+### Bug Fixes:
 
 - Return a conn when the request is filtered
 
