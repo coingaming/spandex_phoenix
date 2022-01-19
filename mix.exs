@@ -39,6 +39,7 @@ defmodule SpandexPhoenix.MixProject do
       name: :spandex_phoenix,
       maintainers: ["Greg Mefford"],
       licenses: ["MIT"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE.md", "CHANGELOG.md", "VERSION"],
       links: %{
         "Changelog" => "https://hexdocs.pm/spandex_phoenix/changelog.html",
         "GitHub" => @source_url,
