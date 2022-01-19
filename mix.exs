@@ -1,13 +1,12 @@
 defmodule SpandexPhoenix.MixProject do
   use Mix.Project
 
-  @version "1.0.6"
-  @source_url "https://github.com/spandex-project/spandex_phoenix"
+  @source_url "https://github.com/coingaming/spandex_phoenix"
 
   def project do
     [
       app: :spandex_phoenix,
-      version: @version,
+      version: version(),
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: compilers(Mix.env()),
@@ -26,9 +25,17 @@ defmodule SpandexPhoenix.MixProject do
     ]
   end
 
+  defp version do
+    case File.read("VERSION") do
+      {:ok, v} -> String.trim(v)
+      {:error, _} -> "0.0.0-development"
+    end
+  end
+
   defp package do
     [
       description: "Tools for integrating Phoenix with Spandex.",
+      organization: "coingaming",
       name: :spandex_phoenix,
       maintainers: ["Greg Mefford"],
       licenses: ["MIT"],
