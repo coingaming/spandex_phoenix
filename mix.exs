@@ -62,7 +62,7 @@ defmodule SpandexPhoenix.MixProject do
       ],
       main: "readme",
       source_url: @source_url,
-      source_ref: "v#{@version}",
+      source_ref: "v#{version()}",
       formatters: ["html"]
     ]
   end
